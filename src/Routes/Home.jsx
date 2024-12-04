@@ -1,12 +1,13 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState, useContext} from 'react'
 import Card from '../Components/Card';
-
-//PENDIENTE: Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+import { ContextGlobal } from '../Components/utils/global.context';
 
 const Home = () => {
   const [dentists, setDentists] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { state } = useContext(ContextGlobal);
+  const { theme } = state;
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -30,7 +31,7 @@ const Home = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="home">
+    <div className={`home ${theme}`}>
       <h2>Lista de Dentistas</h2>
       <div className="dentist-grid">
         {dentists.map((dentist) => (

@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { ContextGlobal } from "../Components/utils/global.context";
 
 //PENDIENTE Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -9,6 +10,8 @@ const Detail = () => {
   const [dentist, setDentist] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const {state} = useContext(ContextGlobal);
+
 
   useEffect(() => {
     // Fetch para obtener el detalle de un dentista en específico
@@ -33,10 +36,11 @@ const Detail = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="detail">
+    <div className={`detail ${state.theme}`}>
       <h1>Detalle del Dentista</h1>
       {dentist ? (
         <div className="detail-card">
+          <img src="/public/images/doctor.jpg" alt="" className="card-img" />
           <p><strong>Nombre:</strong> {dentist.name}</p>
           <p><strong>Email:</strong> {dentist.email}</p>
           <p><strong>Teléfono:</strong> {dentist.phone}</p>

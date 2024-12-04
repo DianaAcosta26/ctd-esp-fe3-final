@@ -12,7 +12,6 @@ const globalReducer = (state, action) => {
         ...state,
         theme: state.theme === "light" ? "dark" : "light",
       }
-      // HACER ESTO
 
     case "ADD_FAVORITE":
       if (state.favorites.some((fav) => fav.id === action.payload.id)) {

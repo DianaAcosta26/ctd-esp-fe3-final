@@ -23,8 +23,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #333;
-  color: white;
+  background-color: #c5c1c1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,20 +32,20 @@ a {
 }
 
 nav a:hover {
-  color: #66d9ff;
+  color:#45c2d8;
 }
 
 
 nav a {
+  color:#5c6bc0;
   margin: 0 15px;
-  color: white;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav button {
   padding: 10px 20px;
-  background-color: #66d9ff;
+  background-color:#5c6bc0;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -59,31 +58,69 @@ nav button:hover {
   background-color: #3b82db;
 }
 
+nav.light{
+  background-color: #d9d9db;
+}
+
+
 /* Footer */
-
-footer {
-  background-color: #333;
-  color: #fff;
+.footer {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Espacio entre los elementos */
   align-items: center;
-  padding: 10px 20px;
-  flex-direction: column; /* Alineamos los elementos en una columna */
-  border-top: 2px solid #444;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+  border-top: 2px solid #444; /* Línea superior */
 }
 
-footer > img{
-  width: 50px; /* Ancho de la imagen (ajústalo según sea necesario) */
-  height: auto; /* Mantiene la relación de aspecto de la imagen */
-  margin-top: 5px; /* Espacio encima de la imagen */
+/* Contenedor principal del contenido del footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Acomoda los elementos en varias líneas si es necesario */
 }
-footer > p{
-  font-size: 14px; /* Tamaño de la fuente del texto */
-  margin-bottom: 5px; /* Espacio debajo del párrafo */
-  font-weight: 400; /* Peso normal para el texto */
-  text-align: center; /* Centra el texto */
 
+/* Estilo para el texto y logo "Powered by" */
+.footer-powered {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio inferior para pantallas pequeñas */
 }
+
+.footer-powered p {
+  margin-right: 10px; /* Espacio entre el texto y el logo */
+  font-size: 16px;
+}
+
+/* Estilo del logo DH */
+.footer-logo {
+  width: 50px;
+  height: auto; /* Mantener proporciones */
+}
+
+/* Contenedor de las redes sociales */
+.footer-socials {
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos */
+}
+
+/* Estilo para los íconos de redes sociales */
+.social-icon {
+  width: 30px; /* Tamaño fijo para los íconos */
+  height: 30px; /* Tamaño fijo para los íconos */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Efecto al pasar el ratón */
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Aumenta el tamaño un 10% */
+  opacity: 0.8; /* Reduce ligeramente la opacidad */
+}
+
 
 /* Estilo para Form */
 form{
@@ -98,12 +135,14 @@ form{
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color:red
 }
 
 label {
   font-size: 16px;
   margin-bottom: 8px;
   font-weight: bold;
+  color: #5c6bc0;
 }
 
 form > button{
@@ -149,8 +188,8 @@ form > input:focus {
 }
 
 .contact p {
-  color: #0a0a0a;
   font-weight: 600;
+
 }
 
 /* Estilo para home */
@@ -211,12 +250,18 @@ form > input:focus {
   gap: 20px;
 }
 
+.card-img {
+  display: block; /* Asegura que la imagen se trate como bloque */
+  margin: 0 auto; /* Centra horizontalmente */
+  max-width: 100%; /* Asegura que no exceda el ancho de la tarjeta */
+  height: auto; /* Mantiene las proporciones */
+}
+
 /* Estilo para Detalles */
 
 .detail {
   padding: 20px;
   text-align: center;
-  background-color: #5c6bc0;
 }
 
 .detail-card {
@@ -229,6 +274,7 @@ form > input:focus {
   text-align: left;
   max-width: 400px;
   margin: auto;
+  color:#3f51b5
 }
 
 .detail-card p {
@@ -244,17 +290,6 @@ form > input:focus {
   text-decoration: underline;
 }
 
-/* Tema Light */
-.detail.light {
-  background-color: #ffffff;
-  color: #333333;
-}
-
-/* Tema Dark */
-.detail.dark {
-  background-color: #333333;
-  color: #ffffff;
-}
 /* Favs */
 
 .favs {
@@ -309,4 +344,4 @@ tr:nth-child(even) {
   background-color: #ffffff;
   color: #333333;
 }
-/* Este último light no sé cómo ponerlo */
+
