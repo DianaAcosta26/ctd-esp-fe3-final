@@ -25,7 +25,7 @@ const Card = ({dentist, isFav = false}) => {
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 
         <Link to={`/dentist/${dentist.id}`} className="card-link">
-        <img src="/public/images/doctor.jpg" alt="" className="card-img" />
+        <img src="/images/doctor.jpg" alt="" className="card-img" />
         <h3>{dentist.name}</h3>
         <p><strong>Username:</strong> {dentist.username}</p>
       </Link>
