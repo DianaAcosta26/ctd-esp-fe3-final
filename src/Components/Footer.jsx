@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="footer-powered">
           <p>Powered by</p>
           <img
-            src="/public/images/DH.png"
+            src="/images/DH.png"
             alt="Logo DH"
             className="footer-logo"
           />
