@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -8,7 +5,7 @@ const Footer = () => {
         <div className="footer-powered">
           <p>Powered by</p>
           <img
-            src="/public/images/DH.png" // Reemplaza con la ruta real de tu logo
+            src="/public/images/DH.png"
             alt="Logo DH"
             className="footer-logo"
           />

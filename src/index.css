@@ -65,14 +65,14 @@ nav.light{
 
 /* Footer */
 .footer {
-  background-color: #333; /* Fondo oscuro */
-  color: #fff; /* Texto blanco */
+  background-color: #333;
+  color: #fff;
   padding: 20px;
   display: flex;
-  justify-content: space-between; /* Espacio entre los elementos */
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
-  border-top: 2px solid #444; /* Línea superior */
+  flex-wrap: wrap;
+  border-top: 2px solid #444;
 }
 
 /* Contenedor principal del contenido del footer */
@@ -81,44 +81,44 @@ nav.light{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap; /* Acomoda los elementos en varias líneas si es necesario */
+  flex-wrap: wrap;
 }
 
 /* Estilo para el texto y logo "Powered by" */
 .footer-powered {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Espacio inferior para pantallas pequeñas */
+  margin-bottom: 10px;
 }
 
 .footer-powered p {
-  margin-right: 10px; /* Espacio entre el texto y el logo */
+  margin-right: 10px;
   font-size: 16px;
 }
 
 /* Estilo del logo DH */
 .footer-logo {
   width: 50px;
-  height: auto; /* Mantener proporciones */
+  height: auto;
 }
 
 /* Contenedor de las redes sociales */
 .footer-socials {
   display: flex;
-  gap: 15px; /* Espacio entre los íconos */
+  gap: 15px; /
 }
 
 /* Estilo para los íconos de redes sociales */
 .social-icon {
-  width: 30px; /* Tamaño fijo para los íconos */
-  height: 30px; /* Tamaño fijo para los íconos */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Efecto al pasar el ratón */
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
 }
 
 .social-icon:hover {
-  transform: scale(1.1); /* Aumenta el tamaño un 10% */
-  opacity: 0.8; /* Reduce ligeramente la opacidad */
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 
@@ -251,10 +251,10 @@ form > input:focus {
 }
 
 .card-img {
-  display: block; /* Asegura que la imagen se trate como bloque */
-  margin: 0 auto; /* Centra horizontalmente */
-  max-width: 100%; /* Asegura que no exceda el ancho de la tarjeta */
-  height: auto; /* Mantiene las proporciones */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Estilo para Detalles */
