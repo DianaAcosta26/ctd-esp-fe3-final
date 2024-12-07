@@ -38,7 +38,7 @@ const Detail = () => {
       <h1>Detalle del Dentista</h1>
       {dentist ? (
         <div className="detail-card">
-          <img src="/public/images/doctor.jpg" alt="" className="card-img" />
+          <img src="/images/doctor.jpg" alt="" className="card-img" />
           <p><strong>Nombre:</strong> {dentist.name}</p>
           <p><strong>Email:</strong> {dentist.email}</p>
           <p><strong>Teléfono:</strong> {dentist.phone}</p>
